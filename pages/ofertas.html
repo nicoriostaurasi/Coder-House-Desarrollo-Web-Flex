@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templo de Camisetas</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Templo de Camisetas</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="#">Ofertas</a>
+                </li>
+                <li>
+                    <a href="catalogo.html">Catálogo</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Quiénes Somos</a>
+                </li>
+                <li>
+                    <a href="faq.html">FAQ</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <hr>
+            <h2>¡Ofertas Especiales!</h2>
+            <p>Descubre nuestras promociones y descuentos EXCLUSIVOS en camisetas:</p>
+            <div class="linea-divisoria"> <hr></div>
+
+            <div class="social-offer">
+                <h3>¡Síguenos en redes sociales y ahorra!</h3>
+                <p>¡Conéctate con nosotros en redes sociales! Sigue a Templo de Camisetas en Instagram o X y obtén un
+                    10% de descuento en tu primera compra. ¡Muestra tu pasión por el fútbol y ahorra!</p>
+                <button>Síguenos en Instagram</button>
+                <button>Síguenos en X</button>
+            </div>
+
+            <div class="linea-divisoria"> <hr></div>
+
+            <div class="predicciones">
+                <h3>¡Adivina el marcador y gana puntos!</h3>
+                <p>¡Demuestra tu conocimiento futbolístico! Participa cada mes en nuestras predicciones y gana puntos
+                    para canjear por descuentos en camisetas. ¿Quién ganará el próximo Superclásico?</p>
+                <form id="encuesta-form">
+                    <label for="match">Partido:</label>
+                    <select id="match">
+                        <option value="boca-river">Boca Juniors vs River Plate</option>
+                        <option value="racing-independiente">Racing vs Independiente</option>
+                        <option value="sanlorenzo-huracan">San Lorenzo vs Huracán</option>
+                    </select>
+                    <label for="score">Tu predicción:</label>
+                    <input type="text" id="score" placeholder="Ejemplo: 2-1">
+                    <button type="submit">Enviar predicción</button>
+                </form>
+            </div>
+
+            <div class="linea-divisoria"> <hr></div>
+
+            <div class="maze-bank">
+                <h3>Descuento exclusivo Maze Bank</h3>
+                <img src="/img/maze_bank.png" alt="Logo Maze Bank">
+                <p>
+                    ¡Aprovecha un 15% de descuento en nuestras camisetas todos los martes y
+                    viernes usando las tarjetas de débito del Maze Bank!</p>
+            </div>
+
+
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Templo de Camisetas. Todos los derechos reservados. CABA</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const form = document.getElementById("encuesta-form");
+      
+          form.addEventListener("submit", function (event) {
+            event.preventDefault(); // Evita el envío real del formulario
+      
+            // Mostrar mensaje de confirmación
+            alert("Gracias por participar!");
+      
+            // Limpiar los campos del formulario
+            form.reset();
+          });
+        });
+    </script>
+</body>
+
+</html>

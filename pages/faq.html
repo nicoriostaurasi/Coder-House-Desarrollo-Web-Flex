@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Templo de Camisetas</title>
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Templo de Camisetas</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="ofertas.html">Ofertas</a>
+                    </li>
+                    <li>
+                        <a href="catalogo.html">Catálogo</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">Quiénes Somos</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <hr>
+                <h2>❓ Preguntas Frecuentes – Resolvemos tus Dudas ⚡</h1>
+                <p>Encuentra aquí las respuestas a las consultas más comunes sobre nuestras camisetas, envíos y promociones.</p>
+                <div class="linea-divisoria"> <hr></div>
+
+                <h3>¿Qué tipos de camisetas de fútbol venden?</h3>
+                <p>Ofrecemos camisetas de equipos nacionales, internacionales y selecciones, incluyendo modelos clásicos, actuales y ediciones especiales.</p>
+                <div class="linea-divisoria"> <hr></div>
+
+                <h3>¿Las camisetas son originales?</h3>
+                <p>Sí, todas nuestras camisetas son 100% originales y cuentan con garantía de autenticidad.</p>
+
+                <div class="linea-divisoria"> <hr></div>
+                <h3>¿Hacen envíos a todo el país?</h3>
+                <p>Sí, realizamos envíos a todas las provincias del país. El costo del envío y el tiempo de entrega pueden variar según tu ubicación.</p>
+
+                <div class="linea-divisoria"> <hr></div>
+                <h3>¿Cuánto tiempo tardan los envíos?</h3>
+                <p>Los envíos suelen tardar entre 3 y 7 días hábiles, dependiendo de la provincia donde te encuentres.</p>
+
+                <div class="linea-divisoria"> <hr></div>
+                <h3>¿Cómo puedo saber mi talla?</h3>
+                <p>En cada página de producto encontrarás una guía de tallas específica para que elijas la que mejor se ajuste a ti.</p>
+                <div class="linea-divisoria"> <hr></div>
+                <h3>¿Puedo personalizar mi camiseta?</h3>
+
+                <p>¡Claro! Ofrecemos servicios de personalización para que agregues el nombre y número que desees. Consulta los detalles en nuestra sección de personalización antes de realizar el pedido.</p>
+                <div class="linea-divisoria"> <hr></div>
+
+                <h3>¿Qué hago si mi camiseta tiene un defecto o no es lo que pedí?</h3>
+                <p>Si tu camiseta llega con un defecto o no corresponde a tu pedido, contáctanos dentro de los primeros 7 días hábiles posteriores a recibirla. Te ayudaremos con el cambio o reembolso.</p>
+                <div class="linea-divisoria"> <hr></div>
+                <h3>¿Aceptan devoluciones o cambios?</h3>
+                <p>Sí, aceptamos devoluciones o cambios dentro de los 15 días hábiles posteriores a la entrega, siempre que la prenda esté sin uso, con las etiquetas originales y en su empaque.</p>
+                <div class="linea-divisoria"> <hr></div>
+                <h3>¿Qué métodos de pago aceptan?</h3>
+                <p>Aceptamos tarjetas de crédito, débito, transferencias bancarias y pagos a través de plataformas como MercadoPago.</p>
+                <div class="linea-divisoria"> <hr></div>
+                <h3>¿Cómo puedo contactar al servicio al cliente?</h3>
+                <p>Puedes escribirnos a nuestro correo [correo@ejemplo.com], enviarnos un WhatsApp al [número] o contactarnos a través de nuestras redes sociales. Nuestro horario de atención es de lunes a viernes, de 9:00 a.m. a 6:00 p.m.</p>
+                <div class="linea-divisoria"> <hr></div>
+                <h3>¿Ofrecen descuentos por compras al por mayor?</h3>
+                <p>Sí, si compras camisetas en grandes cantidades, podemos ofrecerte precios especiales. Contáctanos para recibir una cotización personalizada.</p>
+                <div class="linea-divisoria"> <hr></div>
+                <div class="form-container">
+                    <h2>Formulario de Contacto</h2>
+                    <p>
+                        Si no encontraste la respuesta que buscabas en nuestras Preguntas Frecuentes, completa este formulario y nos pondremos en contacto contigo lo antes posible.
+                    </p>
+                    <form id="contacto-form"> 
+                    <label for="nombre">Nombre completo</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Ingresa tu nombre"
+                        >
+                    <label for="correo">Correo electrónico</label>
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="Ingresa tu correo electrónico"
+                        >
+                    <label for="telefono">Teléfono (opcional)</label>
+                    <input
+                        type="tel"
+                        id="telefono"
+                        name="telefono"
+                        placeholder="Ingresa tu teléfono"
+                    >
+                    <label for="motivo">Motivo de la consulta</label>
+                    <select id="motivo" name="motivo" required>
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option value="pedido">Pedido en curso</option>
+                        <option value="productos">Consulta sobre productos</option>
+                        <option value="problemas">Problemas con un pedido</option>
+                        <option value="personalizacion">Personalización de camisetas</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="5"
+                        placeholder="Escribe tu consulta aquí..."
+                        required
+                    ></textarea>
+                    <button type="submit">Enviar consulta</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Templo de Camisetas. Todos los derechos reservados. CABA</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const form = document.getElementById("contacto-form");
+      
+          form.addEventListener("submit", function (event) {
+            event.preventDefault(); // Evita el envío real del formulario
+      
+            // Mostrar mensaje de confirmación
+            alert("✅ ¡Tu consulta ha sido enviada! Nos pondremos en contacto contigo pronto.");
+      
+            // Limpiar los campos del formulario
+            form.reset();
+          });
+        });
+    </script>
+</body>
+</html>
