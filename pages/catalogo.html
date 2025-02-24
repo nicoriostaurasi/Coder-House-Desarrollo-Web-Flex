@@ -1,57 +1,524 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Templo de Camisetas</title>
-    <link rel="stylesheet" href="/css/styles.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Templo de Camisetas</h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="/index.html">Inicio</a>
-          </li>
-          <li>
-            <a href="ofertas.html">Ofertas</a>
-          </li>
-          <li>
-            <a href="#">Catálogo</a>
-          </li>
-          <li>
-            <a href="contacto.html">Quiénes Somos</a>
-          </li>
-          <li>
-            <a href="faq.html">FAQ</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <hr />
-      <section>
-        <h2>⚽ Catálogo de Camisetas – Encuentra tu Pasión en Cada Color !</h2>
-        <p>Explora nuestra colección de camisetas de los equipos más emblemáticos de Argentina. Calidad, historia y pasión en cada prenda.</p>
-        
-        <div class="linea-divisoria"> <hr></div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Templo de Camisetas</title>
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Templo de Camisetas</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="ofertas.html">Ofertas</a>
+                    </li>
+                    <li>
+                        <a href="#">Catálogo</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">Quiénes Somos</a>
+                    </li>
+                    <li>
+                        <a href="faq.html">FAQ</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <hr>
+            <section>
+                <h2>⚽ Catálogo de Camisetas – Encuentra tu Pasión en Cada Color !</h2>
+                <p>
+                    Explora nuestra colección de camisetas de los equipos más emblemáticos de Argentina. Calidad, historia y pasión
+        en cada prenda.
+                </p>
+                <div class="linea-divisoria">
+                    <hr>
+                </div>
+                <div class="lista-catalogo">
+                    <div class="product-card-container">
+                        <div class="product-img-container">
+                            <img src="../img/cabj.png" alt="camiseta de boca juniors">
+                        </div>
+                        <div class="product-description-container">
+                            <p>Camiseta oficial de Boca Juniors, edición titular, fabricada con materiales de alta calidad.</p>
+                        </div>
+                        <div class="product-price-container">
+                            <p>79.999$</p>
+                        </div>
+                        <div class="product-size-container">
+                            <p>Talles: S - M - L - XL</p>
+                            <select id="motivo" name="motivo" required>
+                                <option value="" disabled selected>
+                                    <p>Seleccionar Talle</p>
+                                </option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </div>
+                        <div class="product-quantity-container">
+                            <p>Disponibles: 20</p>
+                            <input
+                                type="number"
+                                id="quantity"
+                                name="quantity"
+                                min="1"
+                                max="20"
+                                required
+                            >
+                        </div>
+                        <div class="product-quality-container">
+                            <p>⭐⭐⭐⭐☆</p>
+                            <p>4/5 basado en 120 opiniones</p>
+                        </div>
+                        <div class="product-shop-container">
+                            <button>
+                                <p>AGREGAR AL CARRITO</p>
+                            </button>
+                            <button>
+                                <p>COMPRAR</p>
+                            </button>
+                        </div>
+                    </div>
 
-        <ul class="lista-catalogo">
-          <li>
-            <div class="catalogo-image-container">
-              <img src="/img/cabj.png" alt="camiseta de boca juniors" />
-              <div class="text-overlay">Camiseta Boca Juniors - $79.999</div>
-            </div>
-          </li>
-          <li>
-            <div class="catalogo-image-container">
+                    <div class="product-card-container">
+                        <div class="product-img-container">
+                            <img src="../img/carp.png" alt="camiseta de river plate">
+                        </div>
+                        <div class="product-description-container">
+                            <p>Camiseta oficial de River Plate, edición titular, fabricada con materiales de alta calidad.</p>
+                        </div>
+                        <div class="product-price-container">
+                            <p>79.999$</p>
+                        </div>
+                        <div class="product-size-container">
+                            <p>Talles: S - M - L - XL</p>
+                            <select id="motivo" name="motivo" required>
+                                <option value="" disabled selected>
+                                    <p>Seleccionar Talle</p>
+                                </option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </div>
+                        <div class="product-quantity-container">
+                            <p>Disponibles: 25</p>
+                            <input
+                                type="number"
+                                id="quantity"
+                                name="quantity"
+                                min="1"
+                                max="20"
+                                required
+                            >
+                        </div>
+                        <div class="product-quality-container">
+                            <p>⭐⭐⭐⭐☆</p>
+                            <p>4/5 basado en 170 opiniones</p>
+                        </div>
+                        <div class="product-shop-container">
+                            <button>
+                                <p>AGREGAR AL CARRITO</p>
+                            </button>
+                            <button>
+                                <p>COMPRAR</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card-container">
+                        <div class="product-img-container">
+                            <img src="../img/velez_sarsfield.png" alt="camiseta de velez sarsfield">
+                        </div>
+                        <div class="product-description-container">
+                          <p>Camiseta oficial de Velez Sarsfield, edición titular, fabricada con materiales de alta calidad.</p>
+                        </div>
+                        <div class="product-price-container">
+                            <p>65.000$</p>
+                        </div>
+                        <div class="product-size-container">
+                            <p>Talles: S - M - L - XL</p>
+                            <select id="motivo" name="motivo" required>
+                                <option value="" disabled selected>
+                                    <p>Seleccionar Talle</p>
+                                </option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </div>
+                        <div class="product-quantity-container">
+                            <p>Disponibles: 30</p>
+                            <input
+                                type="number"
+                                id="quantity"
+                                name="quantity"
+                                min="1"
+                                max="20"
+                                required
+                            >
+                        </div>
+                        <div class="product-quality-container">
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <p>5/5 basado en 90 opiniones</p>
+                        </div>
+                        <div class="product-shop-container">
+                            <button>
+                                <p>AGREGAR AL CARRITO</p>
+                            </button>
+                            <button>
+                                <p>COMPRAR</p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card-container">
+                        <div class="product-img-container">
+                            <img src="../img/racing.png" alt="camiseta de racing club">
+                        </div>
+                        <div class="product-description-container">
+                            <p>Camiseta oficial de Racing Club, edición titular, fabricada con materiales de alta calidad.</p>
+                        </div>
+                        <div class="product-price-container">
+                            <p>75.999$</p>
+                        </div>
+                        <div class="product-size-container">
+                            <p>Talles: S - M - L - XL</p>
+                            <select id="motivo" name="motivo" required>
+                                <option value="" disabled selected>
+                                    <p>Seleccionar Talle</p>
+                                </option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </div>
+                        <div class="product-quantity-container">
+                            <p>Disponibles: 15</p>
+                            <input
+                                type="number"
+                                id="quantity"
+                                name="quantity"
+                                min="1"
+                                max="20"
+                                required
+                            >
+                        </div>
+                        <div class="product-quality-container">
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <p>5/5 basado en 250 opiniones</p>
+                        </div>
+                        <div class="product-shop-container">
+                            <button>
+                                <p>AGREGAR AL CARRITO</p>
+                            </button>
+                            <button>
+                                <p>COMPRAR</p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card-container">
+                        <div class="product-img-container">
+                            <img src="../img/independiente.png" alt="camiseta de independiente">
+                        </div>
+                        <div class="product-description-container">
+                            <p>Camiseta oficial de Independiente, edición titular, fabricada con materiales de alta calidad.</p>
+                        </div>
+                        <div class="product-price-container">
+                            <p>73.999$</p>
+                        </div>
+                        <div class="product-size-container">
+                            <p>Talles: S - M - L - XL</p>
+                            <select id="motivo" name="motivo" required>
+                                <option value="" disabled selected>
+                                    <p>Seleccionar Talle</p>
+                                </option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </div>
+                        <div class="product-quantity-container">
+                            <p>Disponibles: 18</p>
+                            <input
+                                type="number"
+                                id="quantity"
+                                name="quantity"
+                                min="1"
+                                max="20"
+                                required
+                            >
+                        </div>
+                        <div class="product-quality-container">
+                            <p>⭐⭐⭐⭐☆</p>
+                            <p>4/5 basado en 180 opiniones</p>
+                        </div>
+                        <div class="product-shop-container">
+                            <button>
+                                <p>AGREGAR AL CARRITO</p>
+                            </button>
+                            <button>
+                                <p>COMPRAR</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card-container">
+                        <div class="product-img-container">
+                            <img src="../img/estudiantes_la_plata.png" alt="camiseta de estudiantes de la plata">
+                        </div>
+                        <div class="product-description-container">
+                            <p>Camiseta oficial de Estudiantes de La Plata, edición titular, fabricada con materiales de alta calidad.</p>
+                        </div>
+                        <div class="product-price-container">
+                            <p>70.999$</p>
+                        </div>
+                        <div class="product-size-container">
+                            <p>Talles: S - M - L - XL</p>
+                            <select id="motivo" name="motivo" required>
+                                <option value="" disabled selected>
+                                    <p>Seleccionar Talle</p>
+                                </option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </div>
+                        <div class="product-quantity-container">
+                            <p>Disponibles: 20</p>
+                            <input
+                                type="number"
+                                id="quantity"
+                                name="quantity"
+                                min="1"
+                                max="20"
+                                required
+                            >
+                        </div>
+                        <div class="product-quality-container">
+                            <p>⭐⭐⭐⭐☆</p>
+                            <p>4/5 basado en 160 opiniones</p>
+                        </div>
+                        <div class="product-shop-container">
+                            <button>
+                                <p>AGREGAR AL CARRITO</p>
+                            </button>
+                            <button>
+                                <p>COMPRAR</p>
+                            </button>
+                        </div>
+                    </div>
+
+
+
+                    <div class="product-card-container">
+                      <div class="product-img-container">
+                          <img src="../img/belgrano_cordoba.png" alt="camiseta de Belgrano de Cordoba">
+                      </div>
+                      <div class="product-description-container">
+                          <p>Camiseta oficial de Belgrano de Córdoba, edición titular, fabricada con materiales de alta calidad.</p>
+                      </div>
+                      <div class="product-price-container">
+                          <p>79.999$</p>
+                      </div>
+                      <div class="product-size-container">
+                          <p>Talles: S - M - L - XL</p>
+                          <select id="motivo" name="motivo" required>
+                              <option value="" disabled selected>
+                                  <p>Seleccionar Talle</p>
+                              </option>
+                              <option value="S">S</option>
+                              <option value="M">M</option>
+                              <option value="L">L</option>
+                              <option value="XL">XL</option>
+                          </select>
+                      </div>
+                      <div class="product-quantity-container">
+                          <p>Disponibles: 20</p>
+                          <input
+                              type="number"
+                              id="quantity"
+                              name="quantity"
+                              min="1"
+                              max="20"
+                              required
+                          >
+                      </div>
+                      <div class="product-quality-container">
+                          <p>⭐⭐⭐⭐☆</p>
+                          <p>4/5 basado en 140 opiniones</p>
+                      </div>
+                      <div class="product-shop-container">
+                          <button>
+                              <p>AGREGAR AL CARRITO</p>
+                          </button>
+                          <button>
+                              <p>COMPRAR</p>
+                          </button>
+                      </div>
+                  </div>
+
+                  <div class="product-card-container">
+                      <div class="product-img-container">
+                          <img src="../img/talleres_cordoba.png" alt="camiseta de talleres de cordoba">
+                      </div>
+                      <div class="product-description-container">
+                          <p>Camiseta oficial de Talleres de Córdoba, edición titular, fabricada con materiales de alta calidad.</p>
+                      </div>
+                      <div class="product-price-container">
+                          <p>76.999$</p>
+                      </div>
+                      <div class="product-size-container">
+                          <p>Talles: S - M - L - XL</p>
+                          <select id="motivo" name="motivo" required>
+                              <option value="" disabled selected>
+                                  <p>Seleccionar Talle</p>
+                              </option>
+                              <option value="S">S</option>
+                              <option value="M">M</option>
+                              <option value="L">L</option>
+                              <option value="XL">XL</option>
+                          </select>
+                      </div>
+                      <div class="product-quantity-container">
+                          <p>Disponibles: 17</p>
+                          <input
+                              type="number"
+                              id="quantity"
+                              name="quantity"
+                              min="1"
+                              max="20"
+                              required
+                          >
+                      </div>
+                      <div class="product-quality-container">
+                          <p>⭐⭐⭐⭐⭐</p>
+                          <p>5/5 basado en 200 opiniones</p>
+                      </div>
+                      <div class="product-shop-container">
+                          <button>
+                              <p>AGREGAR AL CARRITO</p>
+                          </button>
+                          <button>
+                              <p>COMPRAR</p>
+                          </button>
+                      </div>
+                  </div>
+
+                  <div class="product-card-container">
+                    <div class="product-img-container">
+                        <img src="../img/newells_olds_boy.png" alt="camiseta de Newells">
+                    </div>
+                    <div class="product-description-container">
+                        <p>Camiseta oficial de Newell's Old Boys, edición titular, fabricada con materiales de alta calidad.</p>
+                    </div>
+                    <div class="product-price-container">
+                        <p>70.999$</p>
+                    </div>
+                    <div class="product-size-container">
+                        <p>Talles: S - M - L - XL</p>
+                        <select id="motivo" name="motivo" required>
+                            <option value="" disabled selected>
+                                <p>Seleccionar Talle</p>
+                            </option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </div>
+                    <div class="product-quantity-container">
+                        <p>Disponibles: 14</p>
+                        <input
+                            type="number"
+                            id="quantity"
+                            name="quantity"
+                            min="1"
+                            max="20"
+                            required
+                        >
+                    </div>
+                    <div class="product-quality-container">
+                        <p>⭐⭐⭐⭐☆</p>
+                        <p>4/5 basado en 170 opiniones</p>
+                    </div>
+                    <div class="product-shop-container">
+                        <button>
+                            <p>AGREGAR AL CARRITO</p>
+                        </button>
+                        <button>
+                            <p>COMPRAR</p>
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="product-card-container">
+                  <div class="product-img-container">
+                      <img src="../img/rosario_central.png" alt="camiseta de rosario central">
+                  </div>
+                  <div class="product-description-container">
+                      <p>Camiseta oficial de Rosario Central, edición titular, fabricada con materiales de alta calidad.</p>
+                  </div>
+                  <div class="product-price-container">
+                      <p>70.999$</p>
+                  </div>
+                  <div class="product-size-container">
+                      <p>Talles: S - M - L - XL</p>
+                      <select id="motivo" name="motivo" required>
+                          <option value="" disabled selected>
+                              <p>Seleccionar Talle</p>
+                          </option>
+                          <option value="S">S</option>
+                          <option value="M">M</option>
+                          <option value="L">L</option>
+                          <option value="XL">XL</option>
+                      </select>
+                  </div>
+                  <div class="product-quantity-container">
+                      <p>Disponibles: 19</p>
+                      <input
+                          type="number"
+                          id="quantity"
+                          name="quantity"
+                          min="1"
+                          max="20"
+                          required
+                      >
+                  </div>
+                  <div class="product-quality-container">
+                      <p>⭐⭐⭐⭐☆</p>
+                      <p>4/5 basado en 150 opiniones</p>
+                  </div>
+                  <div class="product-shop-container">
+                      <button>
+                          <p>AGREGAR AL CARRITO</p>
+                      </button>
+                      <button>
+                          <p>COMPRAR</p>
+                      </button>
+                  </div>
+              </div>
+
+
+                    <!--             <div class="product-container">
               <img src="/img/carp.png" alt="camiseta de rive plate" />
-              <div class="text-overlay">Camiseta River Plate - $79.999</div>
-            </div>
-          </li>
-
-          <li>
+              <p>Camiseta River Plate - $79.999</p>
+            </div> -->
+                </div>
+                <!--           <li>
             <div class="catalogo-image-container">
               <img
                 src="/img/velez_sarsfield.png"
@@ -103,14 +570,14 @@
                 <img src="/img/rosario_central.png" alt="Camiseta Rosario Central">              <div class="text-overlay">Camiseta Rosario Central - $70.999</div>
             </div>
           </li>
-
-        </ul>
-      </section>
+ -->
+            </ul>
+        </section>
     </main>
     <footer>
-      <p>
-        &copy; 2025 Templo de Camisetas. Todos los derechos reservados. CABA
-      </p>
+        <p>
+            &copy; 2025 Templo de Camisetas. Todos los derechos reservados. CABA
+        </p>
     </footer>
-  </body>
+</body>
 </html>
