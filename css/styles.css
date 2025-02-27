@@ -66,11 +66,11 @@ header a {
 }
 
 footer {
-  background-color: #000000;
+/*   background-color: #000000;
   color: #fff;
   text-align: center;
   padding: 10px;
-}
+ */}
 
 /* Estilo para el contenedor */
 .image-container {
@@ -133,22 +133,22 @@ footer {
   padding: 10px;
 }
 
-p {
+/* p {
   text-align: center;
   margin: 20px 0;
-}
+} */
 
 h3 {
   text-align: center;
   margin: 20px 0;
 }
 
-hr {
+/* hr {
   border: none;
   height: 1px;
   background: none;
   border-top: 2mm ridge rgba(211, 220, 50, 0.6);
-}
+} */
 
 .linea-divisoria hr {
   padding: 20px;
@@ -605,3 +605,31 @@ h2 {
   height: auto;
   width: 50vh;
 }
+
+.header-style{
+  background-color: rgb(255, 183, 2);
+  padding: 0px;
+}
+
+.navbar-custom {
+  background-color: rgb(59, 212, 59);
+  color: red;
+  padding: 10px;
+}
+
+.navbar-custom a {
+  color: white;
+}
+
+.navbar-custom span {
+  color: white;
+}
+
+.navbar-toggler-icon {
+ --bs-navbar-toggler-icon-bg: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' width='30' height='30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler 
+{
+  --bs-navbar-toggler-border-color: white;
+}  

@@ -4,29 +4,43 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Templo de Camisetas</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+        <title>Bootstrap Example</title>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="icon" href="../img/faviconV2.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="../css/styles.css">
+
     </head>
     <body>
-        <header>
-            <h1>Templo de Camisetas</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="../index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="ofertas.html">Ofertas</a>
-                    </li>
-                    <li>
-                        <a href="#">Catálogo</a>
-                    </li>
-                    <li>
-                        <a href="contacto.html">Quiénes Somos</a>
-                    </li>
-                    <li>
-                        <a href="faq.html">FAQ</a>
-                    </li>
-                </ul>
+        <header class="header-style">
+            <nav class="navbar navbar-expand-lg navbar-custom">
+                <div class="container-fluid navbar-custom-color">
+                    <a class="navbar-brand" href="../index.html">
+                        Templo de Camisetas
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                            <a class="nav-link" aria-current="page" href="ofertas.html">Ofertas</a>
+                            <a class="nav-link active" aria-current="page" href="#">Catálogo</a>
+                            <a class="nav-link" aria-current="page" href="contacto.html">Quiénes Somos</a>
+                            <a class="nav-link" aria-current="page" href="faq.html">FAQ</a>
+                        </div>
+                    </div>
+                </div>
             </nav>
         </header>
         <main>
@@ -87,7 +101,6 @@
                             </button>
                         </div>
                     </div>
-
                     <div class="product-card-container">
                         <div class="product-img-container">
                             <img src="../img/carp.png" alt="camiseta de river plate">
@@ -139,7 +152,7 @@
                             <img src="../img/velez_sarsfield.png" alt="camiseta de velez sarsfield">
                         </div>
                         <div class="product-description-container">
-                          <p>Camiseta oficial de Velez Sarsfield, edición titular, fabricada con materiales de alta calidad.</p>
+                            <p>Camiseta oficial de Velez Sarsfield, edición titular, fabricada con materiales de alta calidad.</p>
                         </div>
                         <div class="product-price-container">
                             <p>65.000$</p>
@@ -180,7 +193,6 @@
                             </button>
                         </div>
                     </div>
-
                     <div class="product-card-container">
                         <div class="product-img-container">
                             <img src="../img/racing.png" alt="camiseta de racing club">
@@ -227,7 +239,6 @@
                             </button>
                         </div>
                     </div>
-
                     <div class="product-card-container">
                         <div class="product-img-container">
                             <img src="../img/independiente.png" alt="camiseta de independiente">
@@ -320,199 +331,190 @@
                             </button>
                         </div>
                     </div>
-
-
-
                     <div class="product-card-container">
-                      <div class="product-img-container">
-                          <img src="../img/belgrano_cordoba.png" alt="camiseta de Belgrano de Cordoba">
-                      </div>
-                      <div class="product-description-container">
-                          <p>Camiseta oficial de Belgrano de Córdoba, edición titular, fabricada con materiales de alta calidad.</p>
-                      </div>
-                      <div class="product-price-container">
-                          <p>79.999$</p>
-                      </div>
-                      <div class="product-size-container">
-                          <p>Talles: S - M - L - XL</p>
-                          <select id="motivo" name="motivo" required>
-                              <option value="" disabled selected>
-                                  <p>Seleccionar Talle</p>
-                              </option>
-                              <option value="S">S</option>
-                              <option value="M">M</option>
-                              <option value="L">L</option>
-                              <option value="XL">XL</option>
-                          </select>
-                      </div>
-                      <div class="product-quantity-container">
-                          <p>Disponibles: 20</p>
-                          <input
-                              type="number"
-                              id="quantity"
-                              name="quantity"
-                              min="1"
-                              max="20"
-                              required
-                          >
-                      </div>
-                      <div class="product-quality-container">
-                          <p>⭐⭐⭐⭐☆</p>
-                          <p>4/5 basado en 140 opiniones</p>
-                      </div>
-                      <div class="product-shop-container">
-                          <button>
-                              <p>AGREGAR AL CARRITO</p>
-                          </button>
-                          <button>
-                              <p>COMPRAR</p>
-                          </button>
-                      </div>
-                  </div>
-
-                  <div class="product-card-container">
-                      <div class="product-img-container">
-                          <img src="../img/talleres_cordoba.png" alt="camiseta de talleres de cordoba">
-                      </div>
-                      <div class="product-description-container">
-                          <p>Camiseta oficial de Talleres de Córdoba, edición titular, fabricada con materiales de alta calidad.</p>
-                      </div>
-                      <div class="product-price-container">
-                          <p>76.999$</p>
-                      </div>
-                      <div class="product-size-container">
-                          <p>Talles: S - M - L - XL</p>
-                          <select id="motivo" name="motivo" required>
-                              <option value="" disabled selected>
-                                  <p>Seleccionar Talle</p>
-                              </option>
-                              <option value="S">S</option>
-                              <option value="M">M</option>
-                              <option value="L">L</option>
-                              <option value="XL">XL</option>
-                          </select>
-                      </div>
-                      <div class="product-quantity-container">
-                          <p>Disponibles: 17</p>
-                          <input
-                              type="number"
-                              id="quantity"
-                              name="quantity"
-                              min="1"
-                              max="20"
-                              required
-                          >
-                      </div>
-                      <div class="product-quality-container">
-                          <p>⭐⭐⭐⭐⭐</p>
-                          <p>5/5 basado en 200 opiniones</p>
-                      </div>
-                      <div class="product-shop-container">
-                          <button>
-                              <p>AGREGAR AL CARRITO</p>
-                          </button>
-                          <button>
-                              <p>COMPRAR</p>
-                          </button>
-                      </div>
-                  </div>
-
-                  <div class="product-card-container">
-                    <div class="product-img-container">
-                        <img src="../img/newells_olds_boy.png" alt="camiseta de Newells">
+                        <div class="product-img-container">
+                            <img src="../img/belgrano_cordoba.png" alt="camiseta de Belgrano de Cordoba">
+                        </div>
+                        <div class="product-description-container">
+                            <p>Camiseta oficial de Belgrano de Córdoba, edición titular, fabricada con materiales de alta calidad.</p>
+                        </div>
+                        <div class="product-price-container">
+                            <p>79.999$</p>
+                        </div>
+                        <div class="product-size-container">
+                            <p>Talles: S - M - L - XL</p>
+                            <select id="motivo" name="motivo" required>
+                                <option value="" disabled selected>
+                                    <p>Seleccionar Talle</p>
+                                </option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </div>
+                        <div class="product-quantity-container">
+                            <p>Disponibles: 20</p>
+                            <input
+                                type="number"
+                                id="quantity"
+                                name="quantity"
+                                min="1"
+                                max="20"
+                                required
+                            >
+                        </div>
+                        <div class="product-quality-container">
+                            <p>⭐⭐⭐⭐☆</p>
+                            <p>4/5 basado en 140 opiniones</p>
+                        </div>
+                        <div class="product-shop-container">
+                            <button>
+                                <p>AGREGAR AL CARRITO</p>
+                            </button>
+                            <button>
+                                <p>COMPRAR</p>
+                            </button>
+                        </div>
                     </div>
-                    <div class="product-description-container">
-                        <p>Camiseta oficial de Newell's Old Boys, edición titular, fabricada con materiales de alta calidad.</p>
+                    <div class="product-card-container">
+                        <div class="product-img-container">
+                            <img src="../img/talleres_cordoba.png" alt="camiseta de talleres de cordoba">
+                        </div>
+                        <div class="product-description-container">
+                            <p>Camiseta oficial de Talleres de Córdoba, edición titular, fabricada con materiales de alta calidad.</p>
+                        </div>
+                        <div class="product-price-container">
+                            <p>76.999$</p>
+                        </div>
+                        <div class="product-size-container">
+                            <p>Talles: S - M - L - XL</p>
+                            <select id="motivo" name="motivo" required>
+                                <option value="" disabled selected>
+                                    <p>Seleccionar Talle</p>
+                                </option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </div>
+                        <div class="product-quantity-container">
+                            <p>Disponibles: 17</p>
+                            <input
+                                type="number"
+                                id="quantity"
+                                name="quantity"
+                                min="1"
+                                max="20"
+                                required
+                            >
+                        </div>
+                        <div class="product-quality-container">
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <p>5/5 basado en 200 opiniones</p>
+                        </div>
+                        <div class="product-shop-container">
+                            <button>
+                                <p>AGREGAR AL CARRITO</p>
+                            </button>
+                            <button>
+                                <p>COMPRAR</p>
+                            </button>
+                        </div>
                     </div>
-                    <div class="product-price-container">
-                        <p>70.999$</p>
+                    <div class="product-card-container">
+                        <div class="product-img-container">
+                            <img src="../img/newells_olds_boy.png" alt="camiseta de Newells">
+                        </div>
+                        <div class="product-description-container">
+                            <p>Camiseta oficial de Newell's Old Boys, edición titular, fabricada con materiales de alta calidad.</p>
+                        </div>
+                        <div class="product-price-container">
+                            <p>70.999$</p>
+                        </div>
+                        <div class="product-size-container">
+                            <p>Talles: S - M - L - XL</p>
+                            <select id="motivo" name="motivo" required>
+                                <option value="" disabled selected>
+                                    <p>Seleccionar Talle</p>
+                                </option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </div>
+                        <div class="product-quantity-container">
+                            <p>Disponibles: 14</p>
+                            <input
+                                type="number"
+                                id="quantity"
+                                name="quantity"
+                                min="1"
+                                max="20"
+                                required
+                            >
+                        </div>
+                        <div class="product-quality-container">
+                            <p>⭐⭐⭐⭐☆</p>
+                            <p>4/5 basado en 170 opiniones</p>
+                        </div>
+                        <div class="product-shop-container">
+                            <button>
+                                <p>AGREGAR AL CARRITO</p>
+                            </button>
+                            <button>
+                                <p>COMPRAR</p>
+                            </button>
+                        </div>
                     </div>
-                    <div class="product-size-container">
-                        <p>Talles: S - M - L - XL</p>
-                        <select id="motivo" name="motivo" required>
-                            <option value="" disabled selected>
-                                <p>Seleccionar Talle</p>
-                            </option>
-                            <option value="S">S</option>
-                            <option value="M">M</option>
-                            <option value="L">L</option>
-                            <option value="XL">XL</option>
-                        </select>
+                    <div class="product-card-container">
+                        <div class="product-img-container">
+                            <img src="../img/rosario_central.png" alt="camiseta de rosario central">
+                        </div>
+                        <div class="product-description-container">
+                            <p>Camiseta oficial de Rosario Central, edición titular, fabricada con materiales de alta calidad.</p>
+                        </div>
+                        <div class="product-price-container">
+                            <p>70.999$</p>
+                        </div>
+                        <div class="product-size-container">
+                            <p>Talles: S - M - L - XL</p>
+                            <select id="motivo" name="motivo" required>
+                                <option value="" disabled selected>
+                                    <p>Seleccionar Talle</p>
+                                </option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </div>
+                        <div class="product-quantity-container">
+                            <p>Disponibles: 19</p>
+                            <input
+                                type="number"
+                                id="quantity"
+                                name="quantity"
+                                min="1"
+                                max="20"
+                                required
+                            >
+                        </div>
+                        <div class="product-quality-container">
+                            <p>⭐⭐⭐⭐☆</p>
+                            <p>4/5 basado en 150 opiniones</p>
+                        </div>
+                        <div class="product-shop-container">
+                            <button>
+                                <p>AGREGAR AL CARRITO</p>
+                            </button>
+                            <button>
+                                <p>COMPRAR</p>
+                            </button>
+                        </div>
                     </div>
-                    <div class="product-quantity-container">
-                        <p>Disponibles: 14</p>
-                        <input
-                            type="number"
-                            id="quantity"
-                            name="quantity"
-                            min="1"
-                            max="20"
-                            required
-                        >
-                    </div>
-                    <div class="product-quality-container">
-                        <p>⭐⭐⭐⭐☆</p>
-                        <p>4/5 basado en 170 opiniones</p>
-                    </div>
-                    <div class="product-shop-container">
-                        <button>
-                            <p>AGREGAR AL CARRITO</p>
-                        </button>
-                        <button>
-                            <p>COMPRAR</p>
-                        </button>
-                    </div>
-                </div>
-
-
-                <div class="product-card-container">
-                  <div class="product-img-container">
-                      <img src="../img/rosario_central.png" alt="camiseta de rosario central">
-                  </div>
-                  <div class="product-description-container">
-                      <p>Camiseta oficial de Rosario Central, edición titular, fabricada con materiales de alta calidad.</p>
-                  </div>
-                  <div class="product-price-container">
-                      <p>70.999$</p>
-                  </div>
-                  <div class="product-size-container">
-                      <p>Talles: S - M - L - XL</p>
-                      <select id="motivo" name="motivo" required>
-                          <option value="" disabled selected>
-                              <p>Seleccionar Talle</p>
-                          </option>
-                          <option value="S">S</option>
-                          <option value="M">M</option>
-                          <option value="L">L</option>
-                          <option value="XL">XL</option>
-                      </select>
-                  </div>
-                  <div class="product-quantity-container">
-                      <p>Disponibles: 19</p>
-                      <input
-                          type="number"
-                          id="quantity"
-                          name="quantity"
-                          min="1"
-                          max="20"
-                          required
-                      >
-                  </div>
-                  <div class="product-quality-container">
-                      <p>⭐⭐⭐⭐☆</p>
-                      <p>4/5 basado en 150 opiniones</p>
-                  </div>
-                  <div class="product-shop-container">
-                      <button>
-                          <p>AGREGAR AL CARRITO</p>
-                      </button>
-                      <button>
-                          <p>COMPRAR</p>
-                      </button>
-                  </div>
-              </div>
-
-
                     <!--             <div class="product-container">
               <img src="/img/carp.png" alt="camiseta de rive plate" />
               <p>Camiseta River Plate - $79.999</p>
@@ -574,10 +576,114 @@
             </ul>
         </section>
     </main>
-    <footer>
+    <!--         <footer style="background-color: blue;";>
         <p>
             &copy; 2025 Templo de Camisetas. Todos los derechos reservados. CABA
         </p>
+
     </footer>
+
+ -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container px-4">
+            <div class="row justify-content-between">
+                <div class="col col-lg-2 mb-4">
+                    <h5 class="mb-4">MENU</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="../index.html" class="text-decoration-none text-light">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="ofertas.html" class="text-decoration-none text-light">Ofertas</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light">Catálogo</a>
+                        </li>
+                        <li>
+                            <a href="contacto.html" class="text-decoration-none text-light">Quiénes Somos</a>
+                        </li>
+                        <li>
+                            <a href="faq.html" class="text-decoration-none text-light">FAQ</a>
+                        </li>
+                    </div>
+                    <div class="col col-lg-3 mb-4">
+                        <h5 class="mb-4">MEDIOS DE PAGO</h5>
+                        <div class="container">
+                            <div class="row g-1">
+                                <div class="col-6 col-sm-6 col-md-4 p-1">
+                                    <img src="../img/formas_pago/amex@2x.png" class="img-fluid" alt="amex">
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-4 p-1">
+                                    <img src="../img/formas_pago/cabal@2x.png" class="img-fluid" alt="cabal">
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-4 p-1">
+                                    <img src="../img/formas_pago/diners@2x.png" class="img-fluid" alt="diners">
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-4 p-1">
+                                    <img src="../img/formas_pago/mastercard@2x.png" class="img-fluid" alt="mastercard">
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-4 p-1">
+                                    <img src="../img/formas_pago/pagofacil@2x.png" class="img-fluid" alt="pagofacil">
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-4 p-1">
+                                    <img src="../img/formas_pago/rapipago@2x.png" class="img-fluid" alt="rapipago">
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-4 p-1">
+                                    <img src="../img/formas_pago/tarjeta-naranja@2x.png" class="img-fluid" alt="naranja">
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-4 p-1">
+                                    <img src="../img/formas_pago/tarjeta-shopping@2x.png" class="img-fluid" alt="tajshop">
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-4 p-1">
+                                    <img src="../img/formas_pago/visa@2x.png" class="img-fluid" alt="visa">
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+                <div class="col col-lg-2">
+                    <h5 class="mb-4">NEWSLETTER</h5>
+                    <p class="text">Suscríbete para recibir novedades.</p>
+                    <form class="d-flex flex-column gap-2"  onsubmit="mostrarAlerta(event)">
+                        <input type="email" class="form-control" placeholder="Ingresa tu correo">
+                        <button type="submit" class="btn btn-secondary w-100" >Suscribirse</button>
+                    </form>
+                </div>
+
+                <div class="col col-lg-2">
+                    <h5 class="mb-4">REDES SOCIALES</h5>
+                    <div class="d-flex justify-content-center flex-wrap gap-2">
+                        <a href="https://instagram.com" class="text-decoration-none text-light"> <i class="bi bi-instagram fs-2 me-3"></i> </a>
+                        <a href="https://x.com" class="text-decoration-none text-light"> <i class="bi bi-twitter-x fs-2 me-3"></i> </a>
+                        <a href="https://tiktok.com" class="text-decoration-none text-light"> <i class="bi bi-tiktok fs-2 me-3"></i> </a>
+                        <a href="https://linkedin.com" class="text-decoration-none text-light"> <i class="bi bi-linkedin fs-2 me-3"></i> </a>
+                        <a href="https://facebook.com" class="text-decoration-none text-light"> <i class="bi bi-facebook fs-2 me-3"></i> </a>
+                        <a href="https://youtube.com" class="text-decoration-none text-light"> <i class="bi bi-youtube fs-2 me-3"></i> </a>
+                    </div>
+
+                </div>
+            </div>
+            <hr class="my-4">
+                <div class="d-flex flex-column flex-sm-row justify-content-between text-center text-sm-start">
+                    <div class="d-flex">
+                      <p class="text-decoration-none text-light me-4 fs-6 fs-md-5">
+                        &copy;2025 Templo de Camisetas. Todos los derechos reservados. CABA
+                      </p>
+                    </div>
+                    <div class="d-flex">
+                      <a href="#" class="text-decoration-none text-light me-4 fs-6 fs-md-5">Términos de uso</a>
+                      <a href="#" class="text-decoration-none text-light fs-6 fs-md-5">Políticas de Privacidad</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function mostrarAlerta(event) {
+            event.preventDefault(); // Evita que el formulario se envíe realmente
+            alert("¡Ahora estás suscripto!");
+        }
+    </script>
 </body>
 </html>
