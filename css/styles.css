@@ -633,3 +633,7 @@ h2 {
 {
   --bs-navbar-toggler-border-color: white;
 }  
+
+.footer-custom-color{
+  background-color: black;
+}

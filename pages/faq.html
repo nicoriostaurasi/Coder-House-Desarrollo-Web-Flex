@@ -4,7 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Templo de Camisetas</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+        <title>Bootstrap Example</title>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="icon" href="../img/faviconV2.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="../css/styles.css">
+    
     </head>
     <body>
         <header>
@@ -124,10 +131,103 @@
             </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2025 Templo de Camisetas. Todos los derechos reservados. CABA</p>
-    </footer>
 
+    <footer class="footer-custom-color text-light py-4">
+        <div class="container px-4">
+            <div class="row justify-content-between">
+                <div class="col col-lg-2 mb-4">
+                    <h5 class="mb-4">MENU</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="../index.html" class="text-decoration-none text-light">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="ofertas.html" class="text-decoration-none text-light">Ofertas</a>
+                        </li>
+                        <li>
+                            <a href="catalogo.html" class="text-decoration-none text-light">Catálogo</a>
+                        </li>
+                        <li>
+                            <a href="contacto.html" class="text-decoration-none text-light">Quiénes Somos</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-light">FAQ</a>
+                        </li>
+                    </div>
+                    <div class="col col-lg-3 mb-4">
+                        <h5 class="mb-4">MEDIOS DE PAGO</h5>
+                        <div class="container">
+                            <div class="row g-1">
+                                <div class="col-6 col-sm-6 col-md-4 p-1">
+                                    <img src="../img/formas_pago/amex@2x.png" class="img-fluid" alt="amex">
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-4 p-1">
+                                    <img src="../img/formas_pago/cabal@2x.png" class="img-fluid" alt="cabal">
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-4 p-1">
+                                    <img src="../img/formas_pago/diners@2x.png" class="img-fluid" alt="diners">
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-4 p-1">
+                                    <img src="../img/formas_pago/mastercard@2x.png" class="img-fluid" alt="mastercard">
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-4 p-1">
+                                    <img src="../img/formas_pago/pagofacil@2x.png" class="img-fluid" alt="pagofacil">
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-4 p-1">
+                                    <img src="../img/formas_pago/rapipago@2x.png" class="img-fluid" alt="rapipago">
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-4 p-1">
+                                    <img src="../img/formas_pago/tarjeta-naranja@2x.png" class="img-fluid" alt="naranja">
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-4 p-1">
+                                    <img src="../img/formas_pago/tarjeta-shopping@2x.png" class="img-fluid" alt="tajshop">
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-4 p-1">
+                                    <img src="../img/formas_pago/visa@2x.png" class="img-fluid" alt="visa">
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+                <div class="col col-lg-2">
+                    <h5 class="mb-4">NEWSLETTER</h5>
+                    <p class="text">Suscríbete para recibir novedades.</p>
+                    <form class="d-flex flex-column gap-2"  onsubmit="mostrarAlerta(event)">
+                        <input type="email" class="form-control" placeholder="Ingresa tu correo">
+                        <button type="submit" class="btn btn-secondary w-100" >Suscribirse</button>
+                    </form>
+                </div>
+  
+                <div class="col col-lg-2">
+                    <h5 class="mb-4">REDES SOCIALES</h5>
+                    <div class="d-flex justify-content-center flex-wrap gap-2">
+                        <a href="https://instagram.com" class="text-decoration-none text-light"> <i class="bi bi-instagram fs-2 me-3"></i> </a>
+                        <a href="https://x.com" class="text-decoration-none text-light"> <i class="bi bi-twitter-x fs-2 me-3"></i> </a>
+                        <a href="https://tiktok.com" class="text-decoration-none text-light"> <i class="bi bi-tiktok fs-2 me-3"></i> </a>
+                        <a href="https://linkedin.com" class="text-decoration-none text-light"> <i class="bi bi-linkedin fs-2 me-3"></i> </a>
+                        <a href="https://facebook.com" class="text-decoration-none text-light"> <i class="bi bi-facebook fs-2 me-3"></i> </a>
+                        <a href="https://youtube.com" class="text-decoration-none text-light"> <i class="bi bi-youtube fs-2 me-3"></i> </a>
+                    </div>
+  
+                </div>
+            </div>
+            <hr class="my-4">
+                <div class="d-flex flex-column flex-sm-row justify-content-between text-center text-sm-start">
+                    <div class="d-flex">
+                      <p class="text-decoration-none text-light me-4 fs-6 fs-md-5">
+                        &copy;2025 Templo de Camisetas. Todos los derechos reservados. CABA
+                      </p>
+                    </div>
+                    <div class="d-flex">
+                      <a href="#" class="text-decoration-none text-light me-4 fs-6 fs-md-5">Términos de uso</a>
+                      <a href="#" class="text-decoration-none text-light fs-6 fs-md-5">Políticas de Privacidad</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </footer>
+  
+     
     <script>
         document.addEventListener("DOMContentLoaded", function () {
           const form = document.getElementById("contacto-form");
@@ -142,6 +242,11 @@
             form.reset();
           });
         });
-    </script>
+        function mostrarAlerta(event) {
+            event.preventDefault(); // Evita que el formulario se envíe realmente
+            alert("¡Ahora estás suscripto!");
+        }
+ 
+</script>
 </body>
 </html>
