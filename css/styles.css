@@ -617,6 +617,11 @@ h2 {
   padding: 10px;
 }
 
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+  text-decoration: underline;
+  color: rgb(224, 233, 224); 
+}
 .navbar-custom a {
   color: white;
 }
