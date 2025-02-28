@@ -7,10 +7,7 @@
 
 body {
   font-family: Arial, sans-serif;
-/*   background-color: rgb(3, 63, 32);*/  
-
-  background-color: rgba(0, 100, 48, 0.298);
-
+  background-color: rgba(13, 35, 23, 0.38);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -220,7 +217,9 @@ h2 {
   width: auto;
 }
 
-/* Estilos del Catalogo */
+/*======================================================================================================*/
+/* Estilos del Catalogo                                                                                 */
+/*======================================================================================================*/
 
 .lista-catalogo {
   display: flex;
@@ -395,7 +394,7 @@ h2 {
 }
 
 .product-shop-container button:hover {
-  background: #09bd03;
+  background: rgba(91, 169, 91);
 }
 
 .product-shop-container p {
@@ -406,19 +405,6 @@ h2 {
   margin-right: 5px;
   padding: 0;
 }
-
-/* .lista-catalogo ul {
-    list-style-type: none;
-}
-  
-.lista-catalogo li {
-    display: inline-block;
-    margin: 10px 10px;
-    border-radius: 10px;
-    color: #fff;
-    padding: 10px;
-    width: 20%;
-}*/
 
 /* Estilo para el contenedor */
 .catalogo-image-container {
@@ -440,6 +426,15 @@ h2 {
   width: 100%;
   height: auto;
 }
+
+
+.catalogo-desc-justify{
+  text-align: justify;
+}
+
+/*======================================================================================================*/
+/* Estilos del Catalogo                                                                                 */
+/*======================================================================================================*/
 
 #contacto-form {
   max-width: 80%;
@@ -485,22 +480,11 @@ h2 {
   background: #22ff0040;
 }
 
-.texto-contacto-quienessomos {
-  text-align: justify;
-  padding: 30px;
-  padding-bottom: 0px;
-}
-
-.texto-agradecimiento {
-  padding-bottom: 30px;
-}
-
 .iframe-container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 20px auto;
 }
 
 .iframe-container iframe {
@@ -509,7 +493,7 @@ h2 {
   border: none;
   display: block;
   border-radius: 10px;
-}
+} 
 
 .social-offer {
   display: grid;
@@ -612,14 +596,12 @@ h2 {
 }
 
 .navbar-custom {
-  background-color: rgb(59, 212, 59);
+  background-color: rgb(91, 169, 91);
   color: red;
   padding: 10px;
 }
 
 .navbar-nav .nav-link.active {
-  font-weight: bold;
-  text-decoration: underline;
   color: rgb(224, 233, 224); 
 }
 .navbar-custom a {
@@ -642,3 +624,23 @@ h2 {
 .footer-custom-color{
   background-color: black;
 }
+
+.contacto-desc-justify{
+  text-align: justify;
+}
+
+.card-demostracion-color
+{
+  background-color: #000000bb;
+}
+
+.card-demostracion-color a {
+  color: white;
+  background-color: #0e4203;
+  transition: background 0.3s;
+}
+
+.card-demostracion-color a:hover {
+  background: rgba(91, 169, 91);
+}
+
