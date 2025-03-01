@@ -62,13 +62,6 @@ header a {
   /* Elimina el subrayado */
 }
 
-footer {
-/*   background-color: #000000;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
- */}
-
 /* Estilo para el contenedor */
 .image-container {
   position: relative;
@@ -659,5 +652,42 @@ h3 {
 
 .accordion-button:not(.collapsed){
   background: rgba(91, 169, 91);
+  color: white;
+}
+
+.card-product-index-color
+{
+  background-color: #ede4e4;
+}
+
+.card-product-index-color a
+{
+  background-color: #0e4203;
+  transition: background 0.3s;
+  color: white;
+}
+
+.card-product-index-color a:hover {
+  background: rgba(91, 169, 91);
+  color: white;
+
+}
+
+ @media (max-width: 576px) {
+  .custom-font-index-banner h5{
+    font-size: 0.875rem;
+  }
+  .custom-font-index-banner p{
+    font-size: 0.5rem;
+  }
+  .custom-font-index-banner p a{
+    font-size: 0.5rem;
+  }
+}
+
+.index-banner-button
+{
+  background-color: #2ec510;
+  transition: background 0.3s;
   color: white;
 }
