@@ -1,0 +1,217 @@
+@use "sass:map";
+@use "sass:string";
+@use "sass:list";
+@import "colorStyles";
+
+$card-line-styles: (
+  thin: 0.5px solid #000000,
+  thick: 1px solid #000000,
+);
+
+$card-areas: (
+  "product-img-container",
+  "product-description-container",
+  "product-price-container",
+  "product-size-container",
+  "product-quantity-container",
+  "product-quality-container",
+  "product-shop-container"
+);
+
+
+/* Resetear márgenes y rellenos por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Cards Catalogo */
+// Función personalizada para dividir un string por '-'
+@function split-string($input, $separator: "-") {
+  $index: string.index($input, $separator);
+  
+  @if $index {
+    $first: string.slice($input, 1, $index - 1);
+    $rest: string.slice($input, $index + 1, string.length($input));
+    
+    @return list.append(split-string($rest, $separator), $first);
+  }
+  
+  @return ($input,);
+}
+
+@mixin grid-item($row, $col, $horSize:100%, $borders: null) {
+  grid-row: $row;
+  grid-column: $col;
+  width: $horSize;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+   // Si hay bordes, iterar sobre cada uno
+   @if $borders != null {
+    @each $border in $borders {
+      $split-border: split-string($border); // Divide "thin-right" en ("thin", "right")
+      $thickness: list.nth($split-border, 2);
+      $side: list.nth($split-border, 1);
+
+      @debug "Thickness: #{$thickness}, Side: #{$side}, Value: #{map.get($card-line-styles, $thickness)}";
+
+      border-#{$side}: map.get($card-line-styles, $thickness);
+    }
+  }
+}
+
+$sections: (
+  product-img-container: bottom,
+  product-description-container: bottom top,
+  product-price-container: top,
+  product-size-container: right,
+  product-quantity-container: right,
+  product-quality-container: left,
+);
+
+@each $class, $border in $sections {
+  .#{$class} {
+    @each $side in $border {
+      border-#{$side}: map.get($card-line-styles, thin);
+    }
+  }
+}
+
+
+.lista-catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.product-card-container {
+  display: grid;
+  width: 300px;
+  border-radius: 15px;  
+  background-color: $card-background-color;
+  grid-template-areas: $card-areas;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto auto auto auto auto;
+  justify-content: center;
+  justify-items: center;
+  font-size: 10px;
+  text-align: center;
+}
+
+.product-img-container {
+  @include grid-item( 1, 1/span 2, 90%);
+  padding-top: 20px;
+  padding-bottom: 10px;
+  img {
+    width: 60%;
+    height: auto;
+  }
+}
+
+.product-description-container {
+  @include grid-item( 2, 1/span 2, 90%);
+  p {
+    width: 90%;
+    font-size: 10px;
+    margin: 5px;
+  }
+}
+
+.product-price-container {
+  @include grid-item( 3, 1/span 2, 90%, ("thick-bottom", "thin-top"));
+  height: 30px;
+  p {
+    font-size: 20px;
+    margin: 5px;
+    font-weight: bold;
+  }
+}
+
+.product-size-container {
+  @include grid-item( 4, 1, 100%,"thin-right");
+  p {
+    margin: 5px;
+    font-size: 10px;
+  }
+  select {
+    width: 80%;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    font-size: 10px;
+    text-align: center;
+  }
+}
+
+.product-quantity-container {
+  @include grid-item( 5, 1, 100%,"thin-right");
+  padding-bottom: 10px;
+  input {
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid grey;
+    font-size: 10px;
+    text-align: center;
+  }
+  p {
+    margin: 5px;
+    font-size: 10px;
+  }
+}
+
+.product-quality-container {
+  @include grid-item( 4 / span 2, 2, 100%,"thin-left"); 
+  p {
+    margin: 5px;
+    font-size: 10px;
+  }
+}
+
+.product-shop-container {
+  @include grid-item( 6 ,1 / span 2, 100%); 
+  padding-bottom: 5px;
+  padding-top: 5px;
+  button {
+    height: 33px;
+    border-radius: 5px;
+    font-size: 10px;
+    background-color: $buttons-primary-color;
+    margin: 5px;
+    border: none;
+    transition: background 0.3s;
+  }
+  button:hover {
+    background: $buttons-hover-color;
+  }
+  p {
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0;
+  }
+}
+
+.catalogo-image-container {
+  position: relative;
+  width: auto;
+  height: auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
