@@ -267,10 +267,6 @@ body {
   color: white;
 }
 
-/* .card-product-index-color{ 
-  background-color: $card-background-color;
-}
- */
 .card-product-index-color {
   background-color: #ede4e4;
 }
@@ -284,23 +280,76 @@ body {
   color: white;
 }
 
-/* .accordion-item{
+.card-demostracion-color {
+  background-color: rgba(0, 0, 0, 0.7333333333);
+}
+.card-demostracion-color a {
+  color: white;
+  background-color: rgb(91, 169, 91);
+  transition: background 0.3s;
+}
+.card-demostracion-color a:hover {
+  background: #0e4203;
+}
+
+.accordion-item {
   border: none;
 }
-.accordion-button{
-  background:rgba(0, 0, 0, 0.85);
+
+.accordion-button {
+  background: rgba(0, 0, 0, 0.85);
   color: white;
-  :hover{
-    background:rgba(0, 0, 0, 0.9);
-    color: white;  
-  }
-  :selection{
-    color: white;
-  }
-  :not(.collapsed){
-    background: rgba(91, 169, 91);
-    color: white;
-  }
-}  */
+}
+.accordion-button:hover {
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+}
+.accordion-button::selection {
+  color: white;
+}
+.accordion-button:not(.collapsed) {
+  background: rgb(91, 169, 91);
+  color: white;
+}
+
+#contacto-form {
+  max-width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#contacto-form label {
+  display: block;
+  font-weight: bold;
+  color: white;
+}
+#contacto-form input, #contacto-form select, #contacto-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: none;
+}
+#contacto-form button {
+  width: 100%;
+  background: rgb(91, 169, 91);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+#contacto-form button:hover {
+  background: #0e4203;
+}
+
+.contacto-desc-justify {
+  text-align: justify;
+}
 
 /*# sourceMappingURL=styles.css.map */

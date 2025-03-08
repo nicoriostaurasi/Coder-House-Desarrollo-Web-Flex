@@ -10,66 +10,115 @@ body {
   min-height: 100vh;
 }
 
-
-.footer-custom-color{
+.footer-custom-color {
   background-color: black;
 }
 
 @media (max-width: 576px) {
-  .custom-font-index-banner h5{
+  .custom-font-index-banner h5 {
     font-size: 0.875rem;
   }
-  .custom-font-index-banner p{
+
+  .custom-font-index-banner p {
     font-size: 0.5rem;
   }
-  .custom-font-index-banner p a{
+
+  .custom-font-index-banner p a {
     font-size: 0.5rem;
   }
 }
 
-.index-banner-button
-{
+.index-banner-button {
   background-color: $index-banner-button-color;
   transition: background 0.3s;
   color: white;
 }
 
-/* .card-product-index-color{ 
-  background-color: $card-background-color;
-}
- */
 
-.card-product-index-color
-{
+.card-product-index-color {
   background-color: #ede4e4;
-  a{
+  a {
     background-color: $buttons-primary-color;
     transition: background 0.3s;
     color: white;
-  
+
   }
-  a:hover{
-    background:$buttons-hover-color;
+  a:hover {
+    background: $buttons-hover-color;
     color: white;
   }
 }
 
-
-/* .accordion-item{
+.card-demostracion-color {
+  background-color: #000000bb;
+  a {
+    color: white;
+    background-color:$buttons-primary-color;
+    transition: background 0.3s;
+  }
+  a:hover {
+    background: $buttons-hover-color;
+  }
+}
+ 
+.accordion-item{
   border: none;
 }
-.accordion-button{
-  background:rgba(0, 0, 0, 0.85);
+
+.accordion-button {
+  background: $accordion-item-color;
+
   color: white;
-  :hover{
-    background:rgba(0, 0, 0, 0.9);
-    color: white;  
-  }
-  :selection{
+  &:hover {
+    background: $accordion-item-hover-color;    
     color: white;
   }
-  :not(.collapsed){
-    background: rgba(91, 169, 91);
+  &::selection {
     color: white;
   }
-}  */
+  &:not(.collapsed) {
+    background: $accordion-item-background-color;
+    color: white;
+  }
+}
+
+#contacto-form {
+  max-width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background:rgba(0, 0, 0, 0.80);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  label {
+    display: block;
+    font-weight: bold;
+    color: white;
+  }
+  input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+  }
+  button {
+    width: 100%;
+    background: $buttons-primary-color;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background 0.3s;
+    &:hover {
+      background: $buttons-hover-color;
+    }
+  }   
+}
+
+.contacto-desc-justify{
+  text-align: justify;
+}
+
