@@ -222,6 +222,13 @@ $main-green-resalted: rgb(255, 30, 0);
 }
 .navbar-custom a {
   color: white;
+  transition: color 0.5s ease-in-out;
+}
+.navbar-custom a:hover {
+  color: black;
+}
+.navbar-custom a:hover::after {
+  clip-path: circle(100% at center);
 }
 .navbar-custom span {
   color: white;
@@ -239,6 +246,19 @@ $main-green-resalted: rgb(255, 30, 0);
   --bs-navbar-toggler-border-color: white;
 }
 
+.navbar-brand-index-only {
+  animation: rotateMainTittle 0.5s linear 2;
+  transform-origin: center;
+}
+
+@keyframes rotateMainTittle {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
 body {
   font-family: Arial, sans-serif;
   background-color: rgba(13, 35, 23, 0.38);
