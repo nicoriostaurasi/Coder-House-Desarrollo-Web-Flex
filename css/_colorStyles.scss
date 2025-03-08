@@ -1,3 +1,10 @@
-$buttons-hover-color:rgba(91, 169, 91);
-$buttons-primary-color:#0e4203;
+$main-green: rgba(91, 169, 91);
+$main-green-dark: #0e4203;
+/* $main-green: red;
+$main-green-dark: rgb(60, 4, 4);
+ */
+
+$buttons-hover-color:$main-green-dark;
+$buttons-primary-color:$main-green;
 $card-background-color: #ede4e4;
+$navbar-background-color: $main-green;

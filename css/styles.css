@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/* $main-green: red;
+$main-green-dark: rgb(60, 4, 4);
+ */
 /* Resetear márgenes y rellenos por defecto */
 * {
   margin: 0;
@@ -182,13 +185,13 @@
   height: 33px;
   border-radius: 5px;
   font-size: 10px;
-  background-color: #0e4203;
+  background-color: rgb(91, 169, 91);
   margin: 5px;
   border: none;
   transition: background 0.3s;
 }
 .product-shop-container button:hover {
-  background: rgb(91, 169, 91);
+  background: #0e4203;
 }
 .product-shop-container p {
   color: #fff;
@@ -210,6 +213,29 @@
 .catalogo-image-container img {
   width: 100%;
   height: auto;
+}
+
+.navbar-custom {
+  background-color: rgb(91, 169, 91);
+  padding: 10px;
+}
+.navbar-custom a {
+  color: white;
+}
+.navbar-custom span {
+  color: white;
+}
+
+.navbar-nav .nav-link.active {
+  color: rgb(224, 233, 224);
+}
+
+.navbar-toggler-icon {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' width='30' height='30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+  --bs-navbar-toggler-border-color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
