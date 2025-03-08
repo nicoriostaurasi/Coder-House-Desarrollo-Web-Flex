@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* $main-green: red;
 $main-green-dark: rgb(60, 4, 4);
+$main-green-resalted: rgb(255, 30, 0);
  */
 /* Resetear márgenes y rellenos por defecto */
 * {
@@ -325,7 +326,9 @@ body {
   font-weight: bold;
   color: white;
 }
-#contacto-form input, #contacto-form select, #contacto-form textarea {
+#contacto-form input,
+#contacto-form select,
+#contacto-form textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
@@ -350,6 +353,91 @@ body {
 
 .contacto-desc-justify {
   text-align: justify;
+}
+
+.predicciones {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 20px auto;
+  gap: 5px;
+  place-items: center;
+}
+.predicciones button {
+  width: auto;
+  background: rgb(91, 169, 91);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+.predicciones button:hover {
+  background: #0e4203;
+}
+.predicciones label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+.predicciones input, .predicciones select {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid rgb(91, 169, 91);
+  border-radius: 5px;
+  background: #f9f9f9;
+  color: #333;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  margin-bottom: 15px;
+}
+.predicciones input:focus, .predicciones select:focus {
+  border-color: rgb(91, 169, 91);
+  box-shadow: 0 0 8px rgb(91, 169, 91);
+  outline: none;
+}
+
+.maze-bank {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 20px auto;
+  gap: 5px;
+  place-items: center;
+}
+.maze-bank img {
+  width: 50vh;
+  height: auto;
+  background-color: #fff;
+}
+
+.social-offer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 20px auto;
+  gap: 10px;
+  place-items: center;
+}
+.social-offer button {
+  width: auto;
+  background: rgb(91, 169, 91);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+.social-offer button:hover {
+  background: #0e4203;
 }
 
 /*# sourceMappingURL=styles.css.map */

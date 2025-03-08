@@ -34,14 +34,12 @@ body {
   color: white;
 }
 
-
 .card-product-index-color {
   background-color: #ede4e4;
   a {
     background-color: $buttons-primary-color;
     transition: background 0.3s;
     color: white;
-
   }
   a:hover {
     background: $buttons-hover-color;
@@ -53,15 +51,15 @@ body {
   background-color: #000000bb;
   a {
     color: white;
-    background-color:$buttons-primary-color;
+    background-color: $buttons-primary-color;
     transition: background 0.3s;
   }
   a:hover {
     background: $buttons-hover-color;
   }
 }
- 
-.accordion-item{
+
+.accordion-item {
   border: none;
 }
 
@@ -70,7 +68,7 @@ body {
 
   color: white;
   &:hover {
-    background: $accordion-item-hover-color;    
+    background: $accordion-item-hover-color;
     color: white;
   }
   &::selection {
@@ -86,7 +84,7 @@ body {
   max-width: 80%;
   margin: 20px auto;
   padding: 20px;
-  background:rgba(0, 0, 0, 0.80);
+  background: rgba(0, 0, 0, 0.8);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   label {
@@ -94,7 +92,9 @@ body {
     font-weight: bold;
     color: white;
   }
-  input, select, textarea {
+  input,
+  select,
+  textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -115,10 +115,94 @@ body {
     &:hover {
       background: $buttons-hover-color;
     }
-  }   
+  }
 }
 
-.contacto-desc-justify{
+.contacto-desc-justify {
   text-align: justify;
 }
 
+.predicciones {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 20px auto;
+  gap: 5px;
+  place-items: center;
+  button {
+    width: auto;
+    background: $buttons-primary-color;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background 0.3s;
+    &:hover {
+      background: $buttons-hover-color;
+    }
+  }
+  label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  input,select {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid $buttons-primary-color;
+    border-radius: 5px;
+    background: #f9f9f9;
+    color: #333;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    margin-bottom: 15px;
+    &:focus {
+      border-color: $buttons-primary-color;
+      box-shadow: 0 0 8px $buttons-primary-color;
+      outline: none;
+    }
+  }
+}
+
+.maze-bank {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 20px auto;
+  gap: 5px;
+  place-items: center;
+  img {
+    width: 50vh;
+    height: auto;
+    background-color: #fff;
+  }
+}
+
+.social-offer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 20px auto;
+  gap: 10px;
+  place-items: center;
+  button {    
+    width: auto;
+    background: $buttons-primary-color;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background 0.3s;
+    &:hover {
+      background: $buttons-hover-color;
+    }
+  }
+}
