@@ -1,0 +1,257 @@
+@use "sass:map";
+
+$card-line-colors: (
+  thin: 0.5px solid #000000,
+  thick: 1px solid #000000
+);
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+%border-thin-bottom {
+  border-bottom: map.get($card-line-colors, thin);
+}
+
+%border-thick-bottom {
+  border-bottom: map.get($card-line-colors, thick);
+}
+
+%border-thin-top {
+  border-top: map.get($card-line-colors, thin);
+}
+
+%border-thin-right {
+  border-right: map.get($card-line-colors, thin);
+}
+
+%border-thin-left {
+  border-left: map.get($card-line-colors, thin);
+}
+
+
+%border-thick-top {
+  border-top: map.get($card-line-colors, thick);
+}
+
+
+%grid-position{
+  grid-column: 1 / span 2; 
+  width: 90%;
+}
+
+/* Resetear márgenes y rellenos por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Cards Catalogo */
+
+.lista-catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.product-card-container {
+  display: grid;
+  width: 300px;
+  border-radius: 15px;
+  background-color: #ede4e4;
+  grid-template-areas:
+    "product-img-container"
+    "product-description-container"
+    "product-price-container"
+    "product-size-container"
+    "product-quantity-container"
+    "product-quality-container"
+    "product-shop-container";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto auto auto auto auto;
+  justify-content: center;
+  justify-items: center;
+  font-size: 10px;
+  text-align: center;
+}
+
+.product-img-container {
+  grid-row: 1;
+  @extend %grid-position;
+  @extend %border-thin-bottom;
+  @extend %flex-center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  img {
+    width: 60%;
+    height: auto;
+  }
+}
+
+
+.product-description-container {
+  grid-row: 2;
+  @extend %grid-position;
+  height: auto;
+  @extend %flex-center;
+  @extend %border-thin-bottom;
+  @extend %border-thin-top;
+  p{
+    width: 90%;
+    font-size: 10px;
+    margin: 5px;  
+  }
+}
+
+
+.product-price-container {
+  grid-row: 3;
+  @extend %grid-position;
+  height: 30px;
+  @extend %border-thick-bottom;
+  @extend %border-thin-top;
+  @extend %flex-center;
+  p{
+    font-size: 20px;
+    margin: 5px;
+    font-weight: bold;  
+  }
+}
+
+.product-size-container {
+  grid-row: 4;
+  grid-column: 1;
+  width: 100%;
+  @extend %border-thin-right;
+  flex-direction: column;
+  @extend %flex-center;
+  p{
+    margin: 5px;
+    font-size: 10px;  
+  }
+  select{
+    width: 80%;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    font-size: 10px;
+    text-align: center;  
+  }
+}
+
+.product-quantity-container {
+  grid-row: 5;
+  grid-column: 1;
+  width: 100%;
+  @extend %border-thin-right;
+  @extend %flex-center;
+  flex-direction: column;
+  padding-bottom: 10px;
+  input {
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid grey;
+    font-size: 10px;
+    text-align: center;
+  }
+  p{
+    margin: 5px;
+    font-size: 10px;  
+  }
+}
+
+.product-quality-container {
+  grid-row: 4 / span 2;
+  grid-column: 2;
+  width: 100%;
+  border-left: map.get($card-line-colors, thin);
+  @extend %flex-column-center;
+  p{
+    margin: 5px;
+    font-size: 10px;  
+  }
+}
+
+.product-shop-container {
+  grid-row: 6;
+  grid-column: 1 / span 2;
+  @extend %flex-column-center;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  button{
+    height: 33px;
+    border-radius: 5px;
+    font-size: 10px;
+    background-color: #0e4203;
+    margin: 5px;
+    border: none;
+    transition: background 0.3s;  
+  }
+  button:hover{
+    background: rgba(91, 169, 91);
+  }
+  p{
+    color: #fff;
+    font-size: 16px;  
+    margin: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0;  
+  }
+}
+
+/* Estilo para el contenedor */
+.catalogo-image-container {
+  position: relative;
+  /* Permite superponer elementos */
+  width: auto;
+  /* Ancho del contenedor */
+  height: auto;
+  /* Alto del contenedor */
+  border-radius: 15px;
+  /* Bordes redondeados */
+  overflow: hidden;
+  /* Asegura que todo quede dentro del contenedor */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Sombra sutil */
+  img{
+    width: 100%;
+    height: auto;  
+  }
+}
+
+
+/* body{
+  background-color: $secondary-color;
+  color: aliceblue;
+}
+
+.navbar{
+  background-color: $primary-color;
+  ul{
+    list-style: none;
+    li{
+      display: inline-block;
+      padding: 10px;
+      a{
+        color: white;
+      } 
+    }
+  }
+}
+ */
