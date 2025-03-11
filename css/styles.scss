@@ -254,15 +254,15 @@ body {
 }
 
 .front-card-1{
-  @include front-offer-card('/img/ofertas/mercadopago_oferta.jpg');
+  @include front-offer-card('../img/ofertas/mercadopago_oferta.jpg');
 }
 
 .front-card-2{
-  @include front-offer-card('/img/ofertas/2x1.jpg');
+  @include front-offer-card('../img/ofertas/2x1.jpg');
 }
 
 .front-card-3{
-  @include front-offer-card('/img/ofertas/free_shipping.jpg');
+  @include front-offer-card('../img/ofertas/free_shipping.jpg');
 }
 
 
