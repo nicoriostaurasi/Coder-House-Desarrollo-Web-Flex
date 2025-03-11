@@ -206,3 +206,187 @@ body {
     }
   }
 }
+
+.flipper {
+  width: 90%;
+  height: 90%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.front, .front-card-1,.front-card-2,.front-card-3,.back, .back-card-1,.back-card-2,.back-card-3 {
+  width: 100%;
+  height: 75%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+@media (max-width: 576px) {
+  .front,.front-card-1,.front-card-2,.front-card-3, .back,.back-card-1,.back-card-2,.back-card-3 {
+  width: 90%;
+  }
+}
+
+.front {
+  background: $card-background-color;
+  color: white;
+  background-image: url('/img/ofertas/mercadopago_oferta.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin front-offer-card($img-url:null){
+  background: $card-background-color;
+  color: white;
+  background-image: url($img-url);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.front-card-1{
+  @include front-offer-card('/img/ofertas/mercadopago_oferta.jpg');
+}
+
+.front-card-2{
+  @include front-offer-card('/img/ofertas/2x1.jpg');
+}
+
+.front-card-3{
+  @include front-offer-card('/img/ofertas/free_shipping.jpg');
+}
+
+
+.back {
+  background: $card-background-color;
+  background-image: url('/img/ofertas/mercadopago_oferta.jpg');
+  background-size: cover;
+  background-position: center;
+  color: black;
+  transform: rotateY(180deg);
+  padding: 10px;
+  text-align: center;
+  &::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+    z-index: -1; 
+    border-radius: 10px; 
+  }
+}
+
+@mixin back-offer-card($img-url:null) 
+{
+  background: $card-background-color;
+  background-image: url($img-url);
+  background-size: cover;
+  background-position: center;
+  color: black;
+  transform: rotateY(180deg);
+  padding: 10px;
+  text-align: center;
+  &::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+    z-index: -1; 
+    border-radius: 10px;  
+  }
+}
+
+
+
+
+.back-card-1{
+  @include back-offer-card('/img/ofertas/mercadopago_oferta.jpg');
+}
+
+.back-card-2{
+  @include back-offer-card('/img/ofertas/2x1.jpg');
+}
+
+.back-card-3{
+  @include back-offer-card('/img/ofertas/free_shipping.jpg');  
+}
+
+.flip-checkbox {
+  display: none;
+}
+
+.flip-checkbox:checked + .flip-container .flipper {
+  transform: rotateY(180deg);
+}
+
+.card-carousel {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.flip-container{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ofertas-button-colors {
+    width: auto;
+    background: $buttons-primary-color;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background 0.3s;
+    &:hover {
+      background: $buttons-hover-color;
+    }
+}
+
+.card-content {
+  background: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.back-card-content {
+  position:relative;
+  background: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
+  color: white;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  padding: 20px;
+  height: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
