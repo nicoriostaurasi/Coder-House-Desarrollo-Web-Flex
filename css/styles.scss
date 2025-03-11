@@ -315,15 +315,15 @@ body {
 
 
 .back-card-1{
-  @include back-offer-card('/img/ofertas/mercadopago_oferta.jpg');
+  @include back-offer-card('../img/ofertas/mercadopago_oferta.jpg');
 }
 
 .back-card-2{
-  @include back-offer-card('/img/ofertas/2x1.jpg');
+  @include back-offer-card('../img/ofertas/2x1.jpg');
 }
 
 .back-card-3{
-  @include back-offer-card('/img/ofertas/free_shipping.jpg');  
+  @include back-offer-card('../img/ofertas/free_shipping.jpg');  
 }
 
 .flip-checkbox {

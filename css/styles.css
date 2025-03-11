@@ -551,7 +551,7 @@ body {
 
 .back-card-1 {
   background: #ede4e4;
-  background-image: url("/img/ofertas/mercadopago_oferta.jpg");
+  background-image: url("../img/ofertas/mercadopago_oferta.jpg");
   background-size: cover;
   background-position: center;
   color: black;
@@ -573,7 +573,7 @@ body {
 
 .back-card-2 {
   background: #ede4e4;
-  background-image: url("/img/ofertas/2x1.jpg");
+  background-image: url("../img/ofertas/2x1.jpg");
   background-size: cover;
   background-position: center;
   color: black;
@@ -595,7 +595,7 @@ body {
 
 .back-card-3 {
   background: #ede4e4;
-  background-image: url("/img/ofertas/free_shipping.jpg");
+  background-image: url("../img/ofertas/free_shipping.jpg");
   background-size: cover;
   background-position: center;
   color: black;
