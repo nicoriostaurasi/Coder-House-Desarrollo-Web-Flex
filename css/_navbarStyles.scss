@@ -35,6 +35,12 @@
   transform-origin: center;
 }
 
+.navbar-brand-index-only-logo {
+  animation: rotateMainLogo 0.25s linear 4;
+  transform-origin: center;
+}
+
+
 @keyframes rotateMainTittle {
   from {
     transform: rotateY(0deg);
@@ -42,5 +48,15 @@
 
   to {
     transform: rotateY(360deg);
+  }
+}
+
+@keyframes rotateMainLogo {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
   }
 }
