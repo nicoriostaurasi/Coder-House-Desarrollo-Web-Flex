@@ -186,13 +186,13 @@ $main-green-resalted: rgb(255, 30, 0);
   height: 33px;
   border-radius: 5px;
   font-size: 10px;
-  background-color: rgb(91, 169, 91);
+  background-color: rgb(59, 99, 59);
   margin: 5px;
   border: none;
   transition: background 0.3s;
 }
 .product-shop-container button:hover {
-  background: #0e4203;
+  background: #243021;
 }
 .product-shop-container p {
   color: #fff;
@@ -217,7 +217,7 @@ $main-green-resalted: rgb(255, 30, 0);
 }
 
 .navbar-custom {
-  background-color: rgb(91, 169, 91);
+  background-color: rgb(59, 99, 59);
   padding: 10px;
 }
 .navbar-custom a {
@@ -462,7 +462,7 @@ $main-green-resalted: rgb(255, 30, 0);
 
 .ofertas-button-colors {
   width: auto;
-  background: rgb(91, 169, 91);
+  background: rgb(59, 99, 59);
   color: white;
   padding: 12px;
   border: none;
@@ -471,7 +471,7 @@ $main-green-resalted: rgb(255, 30, 0);
   transition: background 0.3s;
 }
 .ofertas-button-colors:hover {
-  background: #0e4203;
+  background: #243021;
 }
 
 .card-content {
@@ -526,7 +526,7 @@ body {
   }
 }
 .index-banner-button {
-  background-color: #2ec510;
+  background-color: #53b83e;
   transition: background 0.3s;
   color: white;
 }
@@ -535,12 +535,12 @@ body {
   background-color: #ede4e4;
 }
 .card-product-index-color a {
-  background-color: rgb(91, 169, 91);
+  background-color: rgb(59, 99, 59);
   transition: background 0.3s;
   color: white;
 }
 .card-product-index-color a:hover {
-  background: #0e4203;
+  background: #243021;
   color: white;
 }
 
@@ -549,11 +549,11 @@ body {
 }
 .card-demostracion-color a {
   color: white;
-  background-color: rgb(91, 169, 91);
+  background-color: rgb(59, 99, 59);
   transition: background 0.3s;
 }
 .card-demostracion-color a:hover {
-  background: #0e4203;
+  background: #243021;
 }
 
 .accordion-item {
@@ -572,7 +572,7 @@ body {
   color: white;
 }
 .accordion-button:not(.collapsed) {
-  background: rgb(91, 169, 91);
+  background: rgb(59, 99, 59);
   color: white;
 }
 
@@ -602,7 +602,7 @@ body {
 }
 #contacto-form button {
   width: 100%;
-  background: rgb(91, 169, 91);
+  background: rgb(59, 99, 59);
   color: white;
   padding: 12px;
   border: none;
@@ -611,7 +611,7 @@ body {
   transition: background 0.3s;
 }
 #contacto-form button:hover {
-  background: #0e4203;
+  background: #243021;
 }
 
 .contacto-desc-justify {
